@@ -1,6 +1,6 @@
 function Jpass() {
 
-// JPass v1.1
+// JPass v1.2
 // Javascript password generator
 // (c) Kelv 2000 kelv@kelv.net
 //
