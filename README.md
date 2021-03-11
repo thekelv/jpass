@@ -1,6 +1,9 @@
 # jpass
 
-Jpass - Random Password Generator (c)2000 Kelv <kelv@kelv.net> / http://www.kelv.net
+Jpass - Random Password Generator 
+
+By Kelv <kelv@kelv.net> 
+http://www.kelv.net
 
 Usage
 -----
