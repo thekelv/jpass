@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>JPass v1.0</b></title>
+</head>
+<body bgcolor=#ffffff>
+
+<center>
+<b>JPass v1.1</b><br>
+(c) 2000 <a href="http://www.kelv.net">Kelv</a>
+<br><br>
+
+<form name="password">
+  <input type="text" name="pass" size="8" maxlength="8">
+  <input type="button" name="sub" value="Generate">
+</form>
+</center>
+
+
+<script language="javascript">
+
+// JPass v1.1
+// Javascript password generator 
+// (c) Kelv 2000 kelv@kelv.net
+//
+// v1.0 - Initial release  : 15:43 / 3/3/2000
+// v1.1 - 10:58 / 8/3/2000 : Fixed variable name bug which stopped Jpass working in Netscape Navigator.
+//
+// Last update : 17:10 / 8/3/2000
+// http://www.kelv.net
+
+function randchar(arg) {
+    var char = '';
+    var seed = Math.floor(Math.random() * arg.length);
+    char = arg[seed];
+    return char;
+}
+
+document.password.sub.onclick = function makepass() {
+    
+    var consts = ['b','c','d','f','g','h','j','k','l','m','n','p','q','r','s','t','v','w','x','y','z'];
+    var hard_consts = ['b','c','d','f','g','h','k','m','p','s','t','v','z'];
+    var link_consts = ['h','l','r'];   
+    var vowels = ['a','e','i','o','u'];
+    var digits = ['1','2','3','4','5','6','7','8','9'];
+    
+    var newpass= '';
+    
+    newpass = newpass + randchar(hard_consts);
+    newpass = newpass + randchar(link_consts);
+    newpass = newpass + randchar(vowels);
+    newpass = newpass + randchar(consts);
+    newpass = newpass + randchar(digits);
+    newpass = newpass + randchar(hard_consts);
+    newpass = newpass + randchar(vowels);
+    newpass = newpass + randchar(consts);
+    
+    document.password.pass.value = newpass;
+}
+
+</script>
+ 
+
