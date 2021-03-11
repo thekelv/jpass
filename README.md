@@ -2,9 +2,9 @@
 
 Jpass - Random Password Generator 
 
-By Kelv <kelv@kelv.net>
-
-http://www.kelv.net
+Demo
+----
+https://www.kelv.net/programming/jpass.php
 
 Usage
 -----
