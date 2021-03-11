@@ -6,7 +6,7 @@ function Jpass() {
 //
 // v1.0 - Initial release  : 15:43 / 3/3/2000
 // v1.1 - 10:58 / 8/3/2000 : Fixed variable name bug which stopped Jpass working in Netscape Navigator.
-// v1.2 - Refactored a little bit later on. 19:48 / 3/10/2021
+// v1.2 - 19:48 / 3/10/2021: Refactored a little bit later on.
 //
 // Usage - (new Jpass()).generate();
 //
